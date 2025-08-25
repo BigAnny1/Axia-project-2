@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* HEADER */
+
+/* logo*/
+#logo-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header img {
+  width: 80px;
+  height: 100px;
+}
+header h4 {
+  color: rgb(225, 169, 28);
+  font-size: 1rem;
+}
+header span {
+  color: rgb(170, 170, 186);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 0.7rem 2rem;
+  background-color: rgb(22, 4, 37);
+  border: 2px solid rgb(184, 146, 12);
+  /* font-weight: 700; */
+}
+
+/* Navigation links */
+header nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+nav ul li {
+  list-style: none;
+}
+
+nav a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 0 1rem;
+}
+nav a:hover {
+  color: rgb(134, 134, 134);
+  border-radius: 2rem;
+  position: relative;
+}
+
+/* animation */
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: rgb(239, 239, 239);
+  transition: width 0.3s ease-in-out 0.2s; /* 0.2s = delay */
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* MAIN*/
+main {
+  background-color: antiquewhite;
+  padding: 0 2rem;
+}
+
+
+.Home-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 1rem;
+  width: 100%;
+  min-height: 80vh;
+}
+
+/* text-area */
+.Text-area {
+  width: 60%;
+  padding: 8rem 2rem;
+  line-height: 1.2;
+  font-weight: 400;
+  
+}
+
+h1 {
+  color: rgb(73, 70, 70);
+  padding-bottom: 3rem;
+  font-size: 3rem;
+}
+.Text-area p {
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+span {
+  color: rgb(22, 22, 74);
+}
+.Text-area button {
+  padding: 1rem;
+  border-radius: 2rem;
+  margin: 2rem 0;
+  color: rgb(215, 206, 206);
+  background-color: rgb(32, 32, 96);
+  font-size: 1rem;
+  font-weight: bold;
+  font-style: italic;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  cursor: pointer;
+}
+
+.Text-area button:hover {
+  color: white;
+  border: 2px solid rgb(182, 249, 13);
+  background-color: rgb(22, 22, 74);
+  transform: scale(1.1);
+}
+
+/* image-area */
+.Image-area {
+  width: 40%;
+
+}
+.Image-area img {
+  max-width: 100%;
+  height: auto;
+}

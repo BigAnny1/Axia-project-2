@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup/Login</title>
+    <link rel="stylesheet" href="./css/signup.css" />
+  </head>
+
+  <body>
+    <div class="form-container">
+      <div class="welcome-section image-section">
+        <h2>Welcome!</h2>
+        <p>
+          Join thousands of users who trust us with their digital journey.
+          Create your account and unlock amazing features
+        </p>
+      </div>
+
+      <form action="">
+        <div>
+          <h1>Create Account</h1>
+          <p>Sign Up to get started with your free Account</p>
+        </div>
+
+        <div class="form-group">
+          <label for="FName">Full Name</label>
+          <input
+            type="text"
+            id="Fname"
+            name="Email"
+            placeholder="John Doe"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="Email">Email Adress</label>
+          <input
+            type="text"
+            id="Email"
+            name="Email"
+            placeholder="johndoe@gmail.com"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="Password">Password</label>
+          <input
+            type="password"
+            id="Pwd"
+            name="password"
+            placeholder="****"
+            required
+          />
+        </div>
+
+        <p>
+          password must be at least 8 characterd with uppercase, lowercase, and
+          number
+        </p>
+        <label for="Confirm-password">Confirm Password</label>
+        <input
+          type="password"
+          id="Confirm-pwd"
+          name="Confirm-password"
+          placeholder="Re-enter Password"
+          required
+        />
+
+        <button>Create Account</button>
+        <a href=" ">Forgot your Password</a>
+
+        <p>or</p>
+        <p>already have an account? <a href="./login.html">Login here</a></p>
+      </form>
+    </div>
+  </body>
+</html>
