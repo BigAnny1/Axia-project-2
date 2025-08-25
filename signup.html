@@ -9,7 +9,7 @@
 
   <body>
     <div class="form-container">
-      <div class="welcome-section image-section">
+      <div class="welcome-section">
         <h2>Welcome!</h2>
         <p>
           Join thousands of users who trust us with their digital journey.
@@ -17,63 +17,74 @@
         </p>
       </div>
 
-      <form action="">
-        <div>
+      <form action="" method="post">
+        <div class="form-header">
           <h1>Create Account</h1>
           <p>Sign Up to get started with your free Account</p>
         </div>
 
         <div class="form-group">
-          <label for="FName">Full Name</label>
+          <label for="fullName">Full Name</label>
           <input
             type="text"
-            id="Fname"
-            name="Email"
+            id="fullName"
+            name="fullName"
             placeholder="John Doe"
             required
           />
         </div>
 
         <div class="form-group">
-          <label for="Email">Email Adress</label>
+          <label for="email">Email Address</label>
           <input
-            type="text"
-            id="Email"
-            name="Email"
+            type="email"
+            id="email"
+            name="email"
             placeholder="johndoe@gmail.com"
             required
           />
         </div>
 
         <div class="form-group">
-          <label for="Password">Password</label>
+          <label for="password">Password</label>
           <input
             type="password"
-            id="Pwd"
+            id="password"
             name="password"
-            placeholder="****"
+            placeholder="Enter your password"
+            required
+          />
+          <p class="password-requirements">
+            Password must be at least 8 characters with uppercase, lowercase, and number
+          </p>
+        </div>
+
+        <div class="form-group">
+          <label for="confirmPassword">Confirm Password</label>
+          <input
+            type="password"
+            id="confirmPassword"
+            name="confirmPassword"
+            placeholder="Re-enter Password"
             required
           />
         </div>
 
-        <p>
-          password must be at least 8 characterd with uppercase, lowercase, and
-          number
-        </p>
-        <label for="Confirm-password">Confirm Password</label>
-        <input
-          type="password"
-          id="Confirm-pwd"
-          name="Confirm-password"
-          placeholder="Re-enter Password"
-          required
-        />
+        <div class="form-group">
+          <button type="submit">Create Account</button>
+        </div>
 
-        <button>Create Account</button>
-        <a href=" ">Forgot your Password</a>
+        <div class="form-links">
+          <a href="#" class="forgot-password">Forgot your Password?</a>
+        </div>
 
-        <p>or</p>
-        <p>already have an account? <a href="./login.html">Login here</a></p>
+        <div class="divider">
+          <p>or</p>
+        </div>
+
+        <div class="login-link">
+          <p>Already have an account? <a href="./login.html">Login here</a></p>
+        </div>
       </form>
     </div>
   </body>

@@ -41,6 +41,7 @@ body {
   color: white;
 }
 
+.welcome-section h1{font-weight: 400;  }
 
 .form-section{width: 50%;
 
