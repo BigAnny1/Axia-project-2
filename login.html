@@ -5,35 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login/Signup page</title>
   </head>
-  <link rel="stylesheet" href="./css/login.css">
+  <link rel="stylesheet" href="./css/login.css" />
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
   />
+  <link rel="stylesheet" href="./css/login.css" />
   <body>
     <div class="login-Container">
+      <div class="text-section">
+        <h2>Welcome Back</h2>
+        <p>
+          Sign in to your account and continue your journey with us. We're glad
+          to see you again!
+        </p>
+      </div>
 
-
-      <form action="">
-        <div class="Form-section">
+      <form action="" method="post">
+        <div class="login-header">
           <h1>LOGIN</h1>
+          <p>Welcome back! Please sign in to your account</p>
+        </div>
+        <div class="login-group">
+          <label for="">Email Address</label>
 
-          <div class="input-box">
-            <input
-              type="text"
-              name=" email"
-              id="email"
-              placeholder=" Enter Email"
-            />
-          </div>
+          <input
+            type="text"
+            name=" email"
+            id="email"
+            required
+            placeholder=" Enter Email"
+          />
+        </div>
 
-          <div class="input-box">
-            <input
-              type="password"
-              name=" Enter Password"
-              id="EnterP"
-              placeholder=" Enter Password"
-            />
+        <div class="login-group">
+          <label for="">Password</label>
+          <input
+            type="password"
+            name=" Enter Password"
+            id="EnterP"
+            required
+            placeholder=" Enter Password"
+          />
+        </div>
+
+        <div class="remeber-password">
+          <label for="remeber">
+            <input type="checkbox" name="remember" id="remeber" />
+            Remeber me</label
+          >
+        </div>
+
+        
+        <div class="link"> <a href=""> Forgot password?</a></div>
+      
+      
+        <div class="login-group">
+          <button>login</button>
+        </div>
+        <div class="signup">
+          <div class="divider"><p>or</p></div>
+
+          <div class="link">
+            <p>
+              Don't have an account? <a href="./signup.html">Sign up here</a>
+            </p>
           </div>
         </div>
       </form>

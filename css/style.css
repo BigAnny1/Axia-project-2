@@ -17,15 +17,18 @@ body {
   align-items: center;
 }
 header img {
-  width: 80px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
+}
+#logo-area img:hover {
+  transform: rotate(360deg) scale(1.1);
 }
 header h4 {
   color: rgb(225, 169, 28);
   font-size: 1rem;
 }
 header span {
-  color: rgb(34, 34, 69);
+  color: rgb(137, 137, 173);
 }
 
 header {
@@ -33,10 +36,9 @@ header {
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
-  padding: 0.7rem 2rem;
-  background: linear-gradient(135deg, #203697 0%, #623490 100%);
+  padding: 2rem 2rem;
+  background: linear-gradient(135deg, #030a2c 0%, #4c1484 100%);
   border: 2px solid rgb(184, 146, 12);
-  /* font-weight: 700; */
 }
 
 /* Navigation links */
@@ -57,7 +59,7 @@ nav a {
   padding: 0 1rem;
 }
 nav a:hover {
-  color: rgb(9, 8, 8);
+  color: rgb(255, 237, 237);
   border-radius: 2rem;
   position: relative;
 }
@@ -80,18 +82,19 @@ nav a:hover::after {
 
 /* MAIN*/
 main {
-  background-color: antiquewhite;
-  padding: 0 2rem;
+  background-color: #c8bebe;
 }
-
 
 .Home-area {
   display: flex;
   justify-content: space-between;
   align-items: start;
-  gap: 1rem;
+  /* gap: 1rem; */
   width: 100%;
   min-height: 80vh;
+  background-color: rgb(238, 228, 217);
+  border-bottom-left-radius: 3rem;
+  border-bottom-right-radius: 20rem;
 }
 
 /* text-area */
@@ -100,7 +103,6 @@ main {
   padding: 8rem 2rem;
   line-height: 1.2;
   font-weight: 400;
-  
 }
 
 h1 {
@@ -117,31 +119,177 @@ span {
   color: rgb(22, 22, 74);
 }
 .Text-area button {
-  padding: 1rem;
+  padding: 1rem 2rem; 
   border-radius: 2rem;
   margin: 2rem 0;
+  border: none;
   color: rgb(215, 206, 206);
-  background:linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  font-size: 1rem;
+  background: linear-gradient(135deg, #314291 0%, #8a5fb5 100%);
+  font-size: 1.3rem;
   font-weight: bold;
   font-style: italic;
   font-family: Georgia, "Times New Roman", Times, serif;
   cursor: pointer;
+  transition: all 0.3s ease; 
+  display: inline-flex;     
+  align-items: center;
+  gap: 0.5rem;             
 }
 
 .Text-area button:hover {
-  color: rgb(0, 0, 0);
-  border: 2px solid rgb(182, 249, 13);
-  background-color: rgb(22, 22, 74);
+  color: #fff;
+  background: linear-gradient(135deg, #1c2759 0%, #5a2c82 100%);
   transform: scale(1.1);
+}
+
+/* Fixing svg */
+.Text-area button svg {
+  padding-top: 2px;     
+  fill: currentColor;   
 }
 
 /* image-area */
 .Image-area {
   width: 40%;
-
 }
 .Image-area img {
   max-width: 100%;
   height: auto;
+}
+
+/* stats-section */
+
+.stats-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  background: linear-gradient(135deg, #535b7c 0%, #562587 100%);
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  border-radius: 2rem;
+  padding: 1.5rem;
+  box-shadow: 0 6px 12px rgba(175, 119, 119, 0.15);
+  margin-top: 5rem;
+}
+.stats :hover {
+  transform: translateX(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  padding: 0.2rem;
+  border-radius: 2rem;
+}
+.stats-container h2 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 2rem;
+}
+.stats-container p {
+  font-family: "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgb(22, 193, 133);
+  font-size: 1rem;
+}
+
+
+
+
+
+/* features-section */
+
+.Features-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+  padding-top: 3rem;
+  background-color: rgb(238, 228, 217);
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+}
+.card-group:hover {
+  transform: translateY(-10px) scale(1.05);
+}
+.card-group {
+  width: 100%;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 0.4rem;
+}
+
+.card-group span {
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-group h2 {
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+.card-group p {
+  color: rgb(73, 61, 61);
+}
+
+.card-group a{
+  padding: 10px 20px;
+  margin-top: 1rem;
+  background-color: rgb(143, 131, 131);
+  justify-content: center;
+  align-items: end;
+  border-radius: 2rem;
+  color: white;
+  font-weight: 800;
+  text-decoration: none;
+    transition: 0.3s ease;
+    width: 150px;
+}
+
+.card-group a:hover  {
+  color: #030a2c;
+  transform: scale(1.02);
+}
+
+
+
+
+
+/* About-section*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+
+footer {
+  padding: 2rem;
+  text-align: center;
+  color: beige;
+  background: linear-gradient(135deg, #2c409a 0%, #562983 100%);
 }
