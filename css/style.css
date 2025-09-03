@@ -68,8 +68,8 @@ nav a:hover {
   border-radius: 2rem;
   position: relative;
 }
-nav {
-}
+/* nav {
+} */
 /* animation */
 nav a::after {
   content: "";
@@ -383,6 +383,12 @@ form {
 .contact-wrapper input {
   padding: 0.4rem;
 }
+.contact-wrapper input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+  background-color: white;
+}
 
 form button {
   padding: 1rem;
@@ -397,7 +403,19 @@ form button {
 
 form button:hover {
   background: #8e52c9;
+ font-weight: 600;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 /* contact-address */
 .contact-address {
