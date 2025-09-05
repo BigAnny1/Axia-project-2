@@ -1,0 +1,89 @@
+/* Page setup */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #6a5acd, #1e90ff);
+  margin: 0;
+  padding: 40px;
+}
+
+/* Container */
+.courses-container {
+  max-width: 1200px;
+  margin: auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.courses-container h1 {
+  text-align: center;
+  color: #483d8b;
+  margin-bottom: 30px;
+}
+
+/* Grid layout */
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+/* Course card */
+.course-card {
+  background: #f9f9f9;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.course-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+.course-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.course-card h2 {
+  margin: 15px;
+  color: #333;
+  font-size: 18px;
+}
+
+.course-card p {
+  margin: 0 15px 15px;
+  color: #666;
+  font-size: 14px;
+  flex-grow: 1;
+}
+
+/* Button */
+.course-card button {
+  margin: 15px;
+  padding: 10px;
+  border: none;
+  background: #6a5acd;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.course-card button:hover {
+  background: #483d8b;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
