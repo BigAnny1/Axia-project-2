@@ -46,6 +46,11 @@ header {
   z-index: 1000;
 }
 
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
 /* Navigation links */
 header nav ul {
   display: flex;
@@ -63,13 +68,10 @@ nav a {
   font-size: 1.2rem;
   padding: 0 1rem;
 }
-nav a:hover {
-  color: #fffcb8;
-  border-radius: 2rem;
+nav li a {
   position: relative;
 }
-/* nav {
-} */
+
 /* animation */
 nav a::after {
   content: "";
@@ -79,7 +81,7 @@ nav a::after {
   width: 0;
   height: 2px;
   background-color: rgb(239, 239, 239);
-  transition: width 0.3s ease-in-out 0.2s; /* 0.2s = delay */
+  transition: width 0.3s ease-in-out 0s;
 }
 
 nav a:hover::after {
@@ -118,7 +120,7 @@ h1 {
 .Text-area p {
   margin-bottom: 2rem;
   font-size: 1.2rem;
-  line-height: 2.0;
+  line-height: 2;
 }
 
 span {
@@ -403,19 +405,8 @@ form button {
 
 form button:hover {
   background: #8e52c9;
- font-weight: 600;
+  font-weight: 600;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /* contact-address */
 .contact-address {
@@ -459,4 +450,40 @@ footer p:hover {
 /*  section */
 section {
   padding: 60px 0;
+}
+
+/* MEDIA QUERY/RESPONSIVENESS */
+@media (max-width: 768px) {
+  /* hamburger menu */
+  header nav ul {
+    flex-direction: column;
+    display: none;
+    background: rgba(3, 10, 44, 0.95);
+    position: absolute;
+    top: 70px;
+    right: 1px;
+    width: 200px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+  }
+  .hamburger {
+    display: block;
+    color: white;
+  }
+  nav ul.active {
+    display: flex;
+  }
+
+  nav ul li a:hover {
+    color: rgb(255, 255, 255);
+    position: relative;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  header nav ul {
+    gap: 1.2rem;
+  }
+
+header #logo-area h4{ font-size: 0.8rem;}
+
+
 }
