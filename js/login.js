@@ -1,4 +1,4 @@
-// login.js
+
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.querySelector("form");
 
@@ -11,9 +11,9 @@ document.addEventListener("DOMContentLoaded", () => {
     try {
       const res = await fetch("https://reqres.in/api/login", {
         method: "POST",
-        headers: { 
+        headers: {
           "Content-Type": "application/json",
-          "x-api-key": "reqres-free-v1"   // ✅ added API key header
+          "x-api-key": "reqres-free-v1",
         },
         body: JSON.stringify({ email, password }),
       });
