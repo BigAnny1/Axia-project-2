@@ -142,3 +142,59 @@ button:hover {
 .link :hover {
   text-decoration: underline;
 }
+
+
+
+/* MEDIA QUERY */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .login-Container {
+    flex-direction: column;
+    height: auto;
+    max-width: 100%;
+    border-radius: 10px;
+  }
+
+  .text-section,
+  form {
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+
+  .text-section h2 {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .text-section p {
+    padding: 0 1rem;
+    font-size: 0.9rem;
+  }
+
+  form h1 {
+    font-size: 1.5rem;
+  }
+
+  .login-group input {
+    height: 2.2rem;
+    font-size: 0.9rem;
+  }
+
+  button {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .login-header p {
+    font-size: 0.7rem;
+  }
+
+  .link a {
+    font-size: 0.7rem;
+  }
+}
