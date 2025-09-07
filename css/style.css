@@ -526,8 +526,6 @@ section {
     padding: 0.8rem;
   }
 
-
-
   /* image-area */
   .Image-area {
     width: 100%;
@@ -539,23 +537,29 @@ section {
     height: 500px;
   }
 
+  /* stats container */
   .stats-container {
-    flex-direction: column;
-    gap: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
     padding: 1rem;
+    margin: 0.4rem;
   }
   .stats-container h2 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
-
-
-
+  .stats-container span {
+    font-size: 1rem;
+  }
 
   /* features card */
   .Features-card {
+    display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
-    padding:0;
+    padding: 0rem;
   }
 
   .card-group {
@@ -625,7 +629,7 @@ section {
   }
   .about-textarea h2 {
     font-size: 1.5rem;
-  text-align: center;
+    text-align: center;
   }
 
   .about-textarea p {
@@ -651,6 +655,7 @@ section {
   .form-header p {
     padding: 1rem;
     font-size: 1rem;
+    text-align: center;
   }
   .contact-address {
     gap: 1rem;
