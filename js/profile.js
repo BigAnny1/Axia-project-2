@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     window.location.href = "./login.html";
   });
 
-  // Edit button functionality
+  
   editBtn.addEventListener("click", () => {
 
 

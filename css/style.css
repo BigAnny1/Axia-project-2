@@ -490,6 +490,7 @@ section {
   header #logo-area h4 {
     font-size: 0.8rem;
   }
+  /* home area */
 
   .Home-area {
     display: flex;
@@ -504,7 +505,9 @@ section {
     font-size: 1rem;
     padding: 0.8rem 1.5rem;
     width: auto;    
-  }
+  }.Text-area button {
+  white-space: nowrap; 
+}
   .Text-area {
     width: 100%;
     text-align: center;

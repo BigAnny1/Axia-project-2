@@ -1,31 +1,36 @@
 document.addEventListener("DOMContentLoaded", async () => {
-  // Select widget elements
+
   const coursesCountEl = document.getElementById("coursesCount");
   const assignmentsCountEl = document.getElementById("assignmentsCount");
   const progressPercentEl = document.getElementById("progressPercent");
   const courseProgressBar = document.getElementById("course-progress");
 
   try {
-    // ----- FETCH COURSES -----
-    const coursesRes = await fetch("https://fakestoreapi.com/products"); // Fake courses
+    // FETCH COURSES 
+    const coursesRes = await fetch("https://fakestoreapi.com/products");
     const coursesData = await coursesRes.json();
-    const enrolledCourses = coursesData.slice(0, 5); // Assume first 5 are enrolled
+    const enrolledCourses = coursesData.slice(0, 5); 
 
     coursesCountEl.textContent = enrolledCourses.length;
 
-    // ----- FETCH ASSIGNMENTS -----
+    //  FETCH ASSIGNMENTS 
     const assignmentsRes = await fetch("https://jsonplaceholder.typicode.com/todos");
     const assignmentsData = await assignmentsRes.json();
-    const pendingAssignments = assignmentsData.filter(todo => !todo.completed).slice(0, 10); // take 10 pending
+    const pendingAssignments = assignmentsData.filter(todo => !todo.completed).slice(0, 10); 
 
     assignmentsCountEl.textContent = pendingAssignments.length;
 
-    // ----- CALCULATE OVERALL PROGRESS -----
-    // Example: percentage of completed assignments vs total enrolled courses
+    //  OVERALL PROGRESS 
     const totalTasks = enrolledCourses.length + pendingAssignments.length;
-    const completedTasks = enrolledCourses.length; // assume enrolled courses count as completed
+    const completedTasks = enrolledCourses.length;
     const progressPercent = totalTasks === 0 ? 0 : Math.round((completedTasks / totalTasks) * 100);
 
+
+
+
+
+
+    
     progressPercentEl.textContent = `${progressPercent}%`;
     courseProgressBar.value = progressPercent;
 
