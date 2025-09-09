@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.querySelector("form");
 
@@ -24,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (res.ok) {
         alert("✅ Login successful");
-        localStorage.setItem("token", data.token);
+        localStorage.setItem("token", sdata.token);
         window.location.href = "./dashboard.html";
       } else {
         alert("❌ " + (data.error || "Login failed"));
