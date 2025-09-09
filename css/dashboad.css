@@ -196,19 +196,20 @@ svg {
 
 /* mobile screen responsiveness */
 @media (max-width: 768px) {
-  /* .hamburger {
-      display: block;
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
-    } */
-
   .dashboard-container {
     flex-direction: column;
   }
   .side-bar {
     width: 100%;
     height: auto;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+  }
+
+  .side-bar .list ul {
+    line-height: 0.2;
   }
   .main-section {
     width: 100%;
@@ -216,12 +217,12 @@ svg {
   }
 
   .header h1 {
-    font-size: 1.9rem;
+    font-size: 1.5rem;
     margin-right: 0.7rem;
   }
 
   .header input {
-    width: 80%;
+    width: 90%;
   }
 
   .student-icon {
